@@ -1,0 +1,19 @@
+{
+  "name": "eskaros-attendance",
+  "version": "1.1.0",
+  "private": true,
+  "description": "تطبيق حضور الموظفين وطلبات السلف — متوافق مع برنامج الرواتب",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test",
+    "db:migrate": "node scripts/migrate-json-to-postgres.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  }
+}

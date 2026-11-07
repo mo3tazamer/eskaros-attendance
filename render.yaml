@@ -1,0 +1,17 @@
+# Render Blueprint — أوتوماتيك Deploy من GitHub
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: eskaros-attendance
+    runtime: docker
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # رابط Supabase Postgres — يضبط من لوحة Render (Environment):
+      #   postgresql://postgres.<ref>:<password>@db.<ref>.supabase.co:5432/postgres?sslmode=require
+      - key: DATABASE_URL
+        sync: false
+      # BACKUP_DIR للوضع المحلي فقط؛ مع Postgres المصدر الوحيد للحقيقة هو القاعدة.
+      - key: BACKUP_DIR
+        value: /tmp/backups
