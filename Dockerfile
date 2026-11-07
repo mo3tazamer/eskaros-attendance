@@ -11,8 +11,8 @@ COPY public ./public
 
 # مع Postgres (DATABASE_URL) لا يلزم قرص دائم؛ النصوص التالية للوضع المحلي فقط.
 ENV HOST=0.0.0.0
-ENV PORT=10000
-EXPOSE 10000
+ENV PORT=7860
+EXPOSE 7860
 
 USER node
 CMD ["node", "server/index.js"]
