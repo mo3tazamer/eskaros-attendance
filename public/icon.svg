@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="بوابة الموظفين">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b4745"/>
+      <stop offset="0.6" stop-color="#0f5c5a"/>
+      <stop offset="1" stop-color="#14807c"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#bff0e9" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+
+  <circle cx="256" cy="268" r="126" fill="none" stroke="url(#ring)" stroke-width="22"/>
+  <circle cx="256" cy="268" r="126" fill="rgba(255,255,255,0.06)" stroke="none"/>
+
+  <path d="M290 160a116 116 0 0 1 66 150" fill="none" stroke="#6ee7d8" stroke-width="22" stroke-linecap="round"/>
+
+  <path d="M256 202v72l50 30" fill="none" stroke="#ffffff" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="256" cy="268" r="18" fill="#ffffff"/>
+
+  <path d="M176 96h160" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.55"/>
+</svg>

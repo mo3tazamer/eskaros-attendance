@@ -1,0 +1,10 @@
+{
+  "appId": "com.eskaros.attendance",
+  "appName": "بوابة الموظفين",
+  "webDir": "www",
+  "server": {
+    "url": "https://YOUR-SERVER.onrender.com",
+    "cleartext": false,
+    "allowNavigation": ["YOUR-SERVER.onrender.com"]
+  }
+}

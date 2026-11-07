@@ -1,0 +1,20 @@
+{
+  "name": "eskaros-attendance-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "غلاف Android (Capacitor) لتطبيق بوابة الموظفين — يفتح نفس السيرفر المنشور",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "sync": "npx cap sync",
+    "open": "npx cap open android",
+    "build": "npx cap sync && cd android && gradlew assembleDebug"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/cli": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  }
+}
